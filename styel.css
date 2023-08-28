@@ -1,0 +1,175 @@
+:root {
+  --modal-duration: 1s;
+  --primary-color:#1d1160
+}
+
+.container {
+  text-align: center;
+  position: relative;
+}
+
+.heading {
+  background-color: rgb(26, 17, 100);
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.main-page {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/* Align text to the left */
+.main-page section {
+  text-align: left;
+}
+
+.list {
+  margin-left: 0; /* Remove default list indentation */
+  padding-left: 20px; /* Add some left padding to the list items */
+}
+
+.btn{
+  padding: 7px 10px;
+  background-color: palevioletred;
+  border-radius: 5px;
+  border: none;
+  color: whitesmoke;
+}
+
+.toggle {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+
+nav{
+  padding-top: 40px;
+  background-color: var(--primary-color);
+  position: fixed;
+  border-right: 2px solid;
+  color: rgb(231, 225, 241);
+  right: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  transform:translateX(-100%);
+}
+
+nav ul{
+  list-style-type: none;
+  margin:0;
+  
+}
+
+
+nav ul li{
+  border-bottom: 0px solid;
+  padding: 20px 0px;
+  color: whitesmoke;
+}
+
+.modal-container{
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  display:none;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container.show-modal{
+  display: block;
+}
+
+.modal{
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0px opx 10px rgba(0,0,0,0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+  animation-name: modalopen;
+}
+
+.modal-header{
+  background: var(--primary-color);
+  color: #fff;
+  padding: 15px;
+}
+
+.modal-content{
+  padding: 20px;
+}
+
+.modal-form div{
+  margin: 15px;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-form input {
+  padding: 8px;
+  width: 100%;
+}
+
+.close-btn{
+  position: absolute;
+  top:0;
+  right: 0;
+  font-size: 25px;
+  background: transparent;
+}
+
+.modal-content{
+  font-weight: bold;
+}
+
+.submit-output{
+  background-color: var( --primary-color);
+  color: whitesmoke;
+}
+
+
+.show-nav{
+  transform: translateX(200px);
+  
+}
+
+
+body{
+  margin: 0;
+  transition: transform 0.3s ease;
+  
+}
+
+a:link { text-decoration: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

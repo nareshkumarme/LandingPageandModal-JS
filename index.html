@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menuslide</title>
+    <link rel="stylesheet" href="styel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav>
+        <div class="logo"></div>
+        <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Portfolio</a></li>
+           <li><a href="#">Blog</a></li>
+           <li><a href="#">Contact me</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+    <div class="heading">
+    <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+    </button>
+    <h1><strong>My Landing Page</strong></h1>
+    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+    <button class="btn" id="open">Sign up</button>
+    </div>
+
+    <div class="main-page">
+        <section>
+            <p class="landing-page"><strong>What is Landing Page</strong></p>
+            <p class ="landing-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat mi sit amet orci convallis tristique porttitor vel urna. Sed et ligula turpis. Suspendisse quis tortor quam. Cras dignissim, orci in semper tincidunt, enim sapien ornare tellus, vel viverra orci libero in sem. 
+            </p>
+        </section>
+
+        <section>
+            <p class = "moredata"><strong>Tell me more</strong></p>
+            <p class="middle-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat mi sit amet orci convallis tristique porttitor vel urna. 
+            </p>
+        </section>
+
+        <section>
+            <p class= "benefits"><strong>Benefits</strong></p>
+            <p>
+                <ul class="list">
+                    <li>Life time access</li>
+                    <li>30 Day Money back</li>
+                    <li>Tailored custom support</li>
+                </ul>
+
+                <p class="benefits-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat mi sit amet orci convallis tristique porttitor vel urna. Sed et ligula turpis. Suspendisse quis tortor quam. 
+                </p>
+            </p>
+        </section>
+    </div>
+
+</div>
+
+<!-- Modal -->
+
+<div class ="modal-container" id="modal">
+    <div class="modal">
+        <button class="close-btn" id="close">
+             <i class="fa fa-times"></i>
+        </button>
+  
+
+    <div class="modal-header">
+        <h3 >Sign up</h3>
+    </div>
+
+    <div class="modal-content">
+        <p>Register with us</p>
+        <form class="modal-form">
+           <div>
+              <label for="fname">First name</label>
+              <input type="text" id="fname" placeholder="Enter Name"><br>
+            </div>
+
+            <div>
+               <label for="lname">Enter Email</label>
+               <input type="text" id="lname" placeholder="Enter email">
+            </div>
+
+            <div>
+                <label for="fname">Password</label>
+                <input type="text" id="fname" placeholder="Password"><br>
+            </div>
+
+            <div>
+                <label for="fname">Confirm Password</label>
+                <input type="text" id="fname" placeholder="Confirm-password"><br>
+            </div>
+
+            <input type="submit" value="submit" class="submit-output">
+
+        </form>
+    </div>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
